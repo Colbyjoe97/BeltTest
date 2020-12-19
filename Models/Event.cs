@@ -14,6 +14,7 @@ namespace BeltTest.Models
         public string Name {get;set;}
         [Required(ErrorMessage =  "Start Date/Time is required")]
         [Display(Name="Start Date/Time:")]
+        [PastDate]
         public DateTime Start {get;set;}
         [Required(ErrorMessage =  "Duration is required")]
         [Display(Name="Duration:")]
